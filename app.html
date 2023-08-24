@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
+
 <body>
 
-<section class="hero-section">
-    <div>
-        <h1>Welcome!</h1>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-        </p>
-        <button>
-            Open Modal
-        </button>
-    </div>
-    <div>
-        <img src="assets/images/food.jpg" />
-    </div>
-</section>
+    <section class="hero-section">
+        <div class="left-side">
+            <h1 class="title">Welcome!</h1>
+            <p class="paragraph">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                unchanged.
+                <button class="button">Open Modal</button>
+            </p>
 
-<script src="public/js/app.js"></script>
+        </div>
+        <div class="right-side"></div>
+        <div class="popup no-visible">
+            <form class="form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="input-name" placeholder="Your name here">
+                </div>
+                <div>
+                    <label for="datepicker">Date:</label>
+                    <input type="text" id="datepicker" name="datepicker" class="datepicker" placeholder="Select a date">
+                </div>
+            </form>
+            <img class="cross" src="./assets/images/close.png" alt="close">
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="public/js/app.js"></script>
+
 </body>
+
 </html>
